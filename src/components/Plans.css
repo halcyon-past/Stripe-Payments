@@ -1,0 +1,157 @@
+.Plans{
+    background-color: aliceblue;
+    height:100vh;
+    width:100%;
+}
+
+.logout{
+    position: absolute;
+    top: 10px;
+    right:20px;
+}
+
+.Plans .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.next{
+    height:3rem;
+    width:20rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+    grid-gap: 1rem;
+    row-gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mobile, .basic, .standard, .premium{
+    width:50%;
+    aspect-ratio: 1/1;
+    background-color: rgb(118, 118, 235);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    cursor: pointer;
+}
+
+.mobile.active, .basic.active, .standard.active, .premium.active{
+    background-color: #352b8e;
+    color:white;
+    position: relative;
+}
+
+.mobile.active::after, .basic.active::after, .standard.active::after, .premium.active::after{
+    position: absolute;
+    content: "";
+    width:1rem;
+    height: 0.7rem;
+    background-color: #352b8e;
+    bottom: -0.7rem;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.price, .quality, .resolution, .devices{
+    color:rgb(137, 137, 137);
+    font-weight: bold;
+}
+
+.price.active, .quality.active, .resolution.active, .devices.active{
+    color:#352b8e;
+}
+
+.devices ul{
+    font-size: 0.8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.devices{
+    height: 100%;
+}
+
+.devices li{
+    margin: 0.5rem 0;
+}
+
+.type{
+    display: flex;
+    width:100%;
+    height:100%;
+    align-items: flex-start;
+    position: relative;
+}
+
+.types{
+    display: flex;
+    width:100%;
+    height:100%;
+    align-items: flex-start;
+    position: relative;
+}
+
+.type::after{
+    position: absolute;
+    content: "";
+    width:68rem;
+    height: 0.1rem;
+    background-color: #c9c7c7;
+    bottom: -0.7rem;
+}
+
+.slider{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide{
+    width:80%;
+    height:50%;
+    background-color: #352b8e;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:aliceblue;
+    padding: 10px;
+}
+
+.slide .option{
+    width: 100%;
+    height:80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.slide .option.active{
+    background-color: aliceblue;
+    border-radius: 50px;
+    color: #352b8e;
+    font-weight: bold;
+}
+
+
+
+

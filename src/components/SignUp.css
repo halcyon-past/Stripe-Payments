@@ -1,0 +1,57 @@
+.SignUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width:25rem;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:80%;
+}
+
+input{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #352b8e;
+}
+
+label{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.remember label{
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+button{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #352b8e;
+    background-color: #352b8e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: #594dcb
+}
